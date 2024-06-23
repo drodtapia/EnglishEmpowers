@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <title>Formulario de Contacto | English Empowers</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <a class="navbar-brand" href="#">English Empowers</a>
+      <nav class="navbar navbar-dark">
+        <button class="navbar-toggler " type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./courses.html">Cursos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./terms.html">Términos y condiciones</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h1>Bienvenido a English Empowers</h1>
+      <p>Aprende inglés de manera interactiva, autónoma.</p>
+    </div>
+    <div class="container">
+      <nav aria-lebel="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+      </nav>
+      <h2>Contacto</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="form-group col-sm-6">
+              <label for="pais">País de residencia:</label>
+              <select class="form-control" id="pais" name="pais" required>
+                  <option value="">Seleccione su país</option>
+              </select>
+          </div>
+          <div class="form-group col-sm-6">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-12">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje" required></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+                    <label class="form-check-label" for="terminos">
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-new">Enviar</button>
+      </form>  
+    </div>  
+    <footer>
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Redes Sociales</h4>
+          <a href="https://www.facebook.com">Facebook</a><br>
+          <a href="https://www.twitter.com">Twitter</a><br>
+          <a href="https://www.instagram.com">Instagram</a><br>
+          <a href="https://www.google.com">Google+</a>
+          <p></p>
+        </div>  
+        <div class="col-sm-4">
+          <h4>Oficina Central</h4>
+          <p><span class="oi oi-home footer-address-icon"></span>Santiago 1234, Chile</p>
+          <p><span class="oi oi-phone footer-address-icon"></span>+56912345678</p>
+          <p><span class="oi oi-inbox footer-address-icon"></span>contacto@englishgempowers.com</p>
+        </div>  
+        <div class="col-sm-4">
+          <h4>Enlaces Útiles</h4>
+          <a href="about.html">Nosotros</a><br>
+          <a href="courses.html">Cursos</a><br>
+          <a href="contact.html">Contacto+</a><br>
+          <a href="terms.html">Términos y condiciones</a><br>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      fetch('paises.txt')
+          .then(response => response.text())
+          .then(paises => {
+              const select = document.getElementById('pais');
+              const paisesArray = paises.split('\n');
+              paisesArray.forEach(pais => {
+                  const option = document.createElement('option');
+                  option.value = pais;
+                  option.textContent = pais;
+                  select.appendChild(option);
+              });
+          });
+    </script>
+
+
+    <div class="footer-bottom">
+      &copy; 2024 English Empowers | Todos los derechos reservados
+    </div>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

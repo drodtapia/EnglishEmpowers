@@ -1,0 +1,313 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  /* Fondo del cuerpo (gris oscuro) */
+  color: #ffffff;
+  /* Color del texto del cuerpo (blanco) */
+}
+.jumbotron {
+  background-color: #000000;
+  /* Negro */
+  color: #ffd700;
+  /* Dorado */
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 800px;
+  /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  /* Centrar el contenedor en la página */
+  padding: 20px;
+  /* Espaciado interno */
+  background-color: #2c2c2c;
+  /* Color de fondo del contenedor (gris más oscuro) */
+  color: #ffffff;
+  /* Color del texto dentro del contenedor (blanco) */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  /* Sombra */
+}
+.container h3,
+.container h4 {
+  color: #ffd700;
+  /* Color dorado para los subtítulos */
+  text-align: center;
+  /* Centrar los subtítulos */
+  margin-bottom: 10px;
+  /* Espacio entre los subtítulos y el contenido siguiente */
+}
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente */
+  color: #ffffff;
+  /* Color del texto */
+  padding: 10px;
+  /* Espaciado interno */
+  border-radius: 5px;
+  /* Bordes redondeados */
+}
+.breadcrumb-item.active {
+  color: #ffd700;
+  /* Color del elemento activo */
+}
+.card-cursos {
+  background-color: #2c2c2c;
+  /* Color de fondo del contenedor (gris más oscuro) */
+  color: #ffffff;
+  /* Color del texto dentro del contenedor (blanco) */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  padding: 20px;
+  /* Espaciado interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transiciones suaves */
+}
+.card-cursos:hover {
+  transform: translateY(-5px);
+  /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Sombra más pronunciada */
+}
+.card-cursos .card-title {
+  font-size: 24px;
+  /* Tamaño del título */
+  margin-bottom: 10px;
+  /* Espaciado inferior */
+}
+.card-cursos .card-subtitle {
+  font-size: 18px;
+  /* Tamaño del subtítulo */
+  color: #a0a0a0;
+  /* Color del subtítulo */
+  margin-bottom: 15px;
+  /* Espaciado inferior */
+}
+.card-cursos .card-text {
+  font-size: 16px;
+  /* Tamaño del texto */
+  line-height: 1.5;
+  /* Altura de línea */
+}
+.btn-new,
+.card-cursos button.btn-new {
+  display: inline-block;
+  /* Asegura que el botón sea un bloque en línea */
+  text-align: center;
+  /* Asegura que el texto esté centrado */
+  background-color: #ffd700;
+  /* Color del botón */
+  color: #000000 !important;
+  /* Color del texto del botón */
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  cursor: pointer;
+  /* Cambiar cursor al pasar por encima */
+  transition: background-color 0.3s, color 0.3s;
+  /* Transiciones suaves */
+  width: 100%;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.btn-new:hover,
+.card-cursos button.btn-new:hover {
+  text-align: center;
+  /* Asegura que el texto esté centrado */
+  background-color: #ccaa00;
+  /* Cambia de color al pasar el mouse */
+  color: black !important;
+  /* Cambia el color del texto al pasar el mouse */
+  width: 100%;
+}
+footer {
+  background-color: #000000;
+  /* Negro */
+  color: #ffd700;
+  /* Dorado */
+  padding: 20px;
+  text-align: justify;
+  margin-top: 40px;
+  /* Aumenta el espacio en la parte superior */
+}
+.container a,
+footer a,
+footer p {
+  color: #ffffff;
+  /* Blanco */
+  text-decoration: none;
+}
+.container a:hover,
+footer a:hover,
+footer p:hover {
+  color: #636363;
+  /* Gris metálico */
+}
+.navbar {
+  background-color: #000000;
+  /* Negro */
+  color: #ffd700;
+  /* Dorado */
+  padding: 10px 20px;
+  /* Espaciado interno */
+}
+.navbar-brand,
+.navbar-toggler,
+.navbar-nav .nav-link {
+  color: #ffd700;
+  /* Dorado */
+  transition: color 0.3s;
+  /* Transición suave de color */
+  font-size: 14px;
+  /* Tamaño de fuente para el nombre del sitio */
+  outline: none !important;
+  /* Eliminar el contorno al hacer clic */
+  box-shadow: none !important;
+  /* Eliminar sombra al hacer clic */
+}
+.navbar-brand:hover,
+.navbar-toggler:hover,
+.navbar-nav .nav-link:hover {
+  color: #ccaa00;
+  /* Dorado ligeramente oscurecido */
+}
+.btn-login,
+.navbar-toggler {
+  color: gainsboro;
+  border-color: #ffd700;
+  /* Color del borde también dorado */
+}
+.btn-login:hover,
+.navbar-toggler:hover {
+  color: gray;
+  border-color: #ccaa00;
+  /* Color del borde también dorado ligeramente oscurecido */
+}
+.nav-tabs .nav-link {
+  color: #ffd700 !important;
+  border-radius: 5px;
+  /* Bordes redondeados */
+  margin-bottom: 5px;
+  /* Espaciado inferior */
+  transition: color 0.3s;
+  /* Transición suave de color */
+}
+.nav-tabs .nav-link.active {
+  color: black !important;
+  transition: color 0.3s;
+  /* Transición suave de color */
+}
+/* Estilo para todos los iconos */
+.oi {
+  color: #ffd700;
+  /* Color dorado */
+}
+.footer-address-icon {
+  padding-right: 10px;
+}
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2c2c2c;
+  /* Fondo gris oscuro */
+  color: #ffffff;
+  /* Texto blanco */
+}
+/* Estilos para las celdas de la tabla */
+td,
+th {
+  padding: 10px;
+  /* Espacio alrededor del contenido de la celda */
+  border: 1px solid #ffffff;
+  /* Borde blanco para las celdas */
+}
+/* Estilos para el encabezado de la tabla */
+th {
+  background-color: #1e1e1e;
+  /* Fondo gris más oscuro para el encabezado */
+}
+/* Estilos alternativos para filas impares */
+tr:nth-child(odd) {
+  background-color: #454545;
+  /* Fondo gris más claro para filas impares */
+}
+/* Estilo para el cuerpo del modal de inicio de sesión */
+.modal-header,
+.modal-body {
+  background-color: #343a40;
+  /* Color de fondo oscuro */
+  color: #ffffff;
+  /* Color del texto claro */
+}
+/* Estilo para el botón de cerrar del modal */
+.btn-close {
+  color: #ffffff;
+  /* Color del texto del botón de cerrar */
+}
+#carouselControls {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  /* Altura fija para evitar cambios de tamaño */
+  overflow: hidden;
+  /* Oculta el contenido que sobresale */
+  position: relative;
+  /* Establece posición relativa para contener imágenes absolutas */
+  background: white;
+}
+.carousel-item img {
+  max-width: 100%;
+  /* Ajusta el ancho máximo del contenedor */
+  max-height: 100%;
+  /* Ajusta la altura máxima del contenedor */
+  width: auto;
+  /* Permite ajustar el ancho automáticamente */
+  height: auto;
+  /* Permite ajustar la altura automáticamente */
+  object-fit: contain;
+  /* Ajusta la imagen manteniendo su relación de aspecto */
+  display: block;
+  margin: auto;
+  position: absolute;
+  /* Ajusta la posición de la imagen */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.figure-caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.carousel-indicators {
+  color: #000000;
+  margin-bottom: 40px;
+  /* Agrega espacio entre los indicadores y el figcaption */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(130%);
+}

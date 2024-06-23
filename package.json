@@ -1,0 +1,51 @@
+{
+  "name": "english-empowers",
+  "version": "1.0.0",
+  "description": "Pagina web en desarrollo",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "less": "lessc css/styles.less css/styles.css",
+    "watch:less": "onchange \"css/**/*.less\" -- npm run less",
+    "start": "concurrently \"npm run dev\" \"npm run watch:less\"",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin": "gulp usemin",
+    "build": "npm run clean && npm run less && npm run imagemin && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drodtapia/EnglishEmpowers.git"
+  },
+  "author": "David Rodriguez",
+  "license": "CC-BY-NC-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/drodtapia/EnglishEmpowers/issues"
+  },
+  "homepage": "https://github.com/drodtapia/EnglishEmpowers/main/readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "less": "^4.2.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "rimraf": "^5.0.7",
+    "uglify-js": "^3.18.0",
+    "usemin-cli": "^0.6.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-terser": "^2.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "glob": "^10.4.2",
+    "lru-cache": "^10.2.2",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1",
+    "uuid": "^10.0.0"
+  },
+  "keywords": []
+}
